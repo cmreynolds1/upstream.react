@@ -2,6 +2,7 @@ import React from 'react';
 import './Dashboard.css'
 import { Heading } from '@aws-amplify/ui-react';
 import { useNavigate } from 'react-router-dom';
+import { show } from './ShowFunc';
 
 function Dashboard () {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ function Dashboard () {
       <div className="container">
       <Heading level={4} id="Upstreamtitle"> Upstream </Heading>
       </div>
-      <table>
+      <table id="games-list">
         <tbody>
           <tr className="gameheader">
             <th>#</th>
@@ -76,12 +77,12 @@ function Dashboard () {
         </tbody>
       </table>
       <table id="footer">
-        <th><a href="#" onClick="return show('all');">All Games Played</a></th>
-        <th><a href="#" onClick="return show('completed');">Completed Games</a></th>
-        <th><a href="#" onClick="return show('planning');">Games Up Next</a></th>
-        <th><a href="#" onClick="return show('currently-playing');">Currently Playing</a></th>
-        <th><a href="#" onClick="return show('on-hold');">Games On Hold</a></th>
-        <th><a href="#" onClick="return show('dropped');">Games/Dropped Quit</a></th>
+        <th><a href="#" onClick={() => show('all')}>All Games Played</a></th>
+        <th><a href="#" onClick={() => show('completed')}>Completed Games</a></th>
+        <th><a href="#" onClick={() => show('planning')}>Games Up Next</a></th>
+        <th><a href="#" onClick={() => show('currently-playing')}>Currently Playing</a></th>
+        <th><a href="#" onClick={() => show('on-hold')}>Games On Hold</a></th>
+        <th><a href="#" onClick={() => show('dropped')}>Games/Dropped Quit</a></th>
       </table>
     </div>
   )
