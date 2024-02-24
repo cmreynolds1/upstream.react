@@ -37,6 +37,7 @@ function App() {
           <Route element={<PrivateRoutes />}>
             <Route path='/dashboard' element={<Dashboard />} exact />
             <Route path='/steamgames' element={<SteamGamesList />} exact />
+            <Route path='/friends' element={<FriendsList />} exact />
           </Route>
 
         </Routes>
