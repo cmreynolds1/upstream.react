@@ -2,6 +2,7 @@
   "name": "senior-project",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://api.steampowered.com",
   "dependencies": {
     "@aws-amplify/auth": "^6.0.16",
     "@aws-amplify/ui-react": "^6.1.3",

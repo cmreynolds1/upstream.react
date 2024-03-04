@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 
 .gamepic {
-    width: 54px;
-    height: 72px;
+    width: 50px;
+    height: 50px;
 }
 
 table {
@@ -44,30 +44,28 @@ th {
     text-align: inherit;
 }
 
-#allgamestitle {
-    font-size: larger;
-    font-weight: bolder;
-}
-
-.leaderboard {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 20px;
-}
-
-#all-games {
-    width: 50%;
-    float: left;
-    clear: both;
-    margin-top: 10px;
-}
-
-#leaderboard {
-    position: relative;
-    margin: left 50%;
-    margin-top: 10px;
-}
-
 .gameheader {
     text-align: center;
 }
+
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-title {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+.small-dropdown {
+    max-width: 200px;
+    padding: 5px;
+}
+
+.small-button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    margin: 0;
+  }
